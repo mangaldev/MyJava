@@ -10,7 +10,7 @@ public class Graph {
     private List<List<Integer>> adjList;
     
     public Graph(int V) {
-        adjList = new ArrayList<List<Integer>>(10);
+        adjList = new ArrayList<List<Integer>>(V);
         for (int i = 0; i < V; i++)
         {
             adjList.set(i, new ArrayList<Integer>());
