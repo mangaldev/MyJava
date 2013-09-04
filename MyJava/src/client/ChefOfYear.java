@@ -79,27 +79,3 @@ class ChefOfyear {
         mapChefVoteNum.clear();
     }
 }
-class InputReader {
-    BufferedReader in;
-    StringTokenizer tokenizer = null;
-
-    public InputReader(InputStream is) {
-        in = new BufferedReader(new InputStreamReader(is));
-    }
-
-    public String next() {
-        try {
-            while (tokenizer == null || !tokenizer.hasMoreTokens()) {
-                tokenizer = new StringTokenizer(in.readLine());
-            }
-            return tokenizer.nextToken();
-        } catch (IOException e) {
-            return null;
-        }
-    }
-
-    public int nextInt() {
-        return Integer.parseInt(next());
-    }
-
-}

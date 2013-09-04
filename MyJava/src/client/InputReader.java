@@ -15,7 +15,12 @@ public class InputReader {
     }
     
 
-    public String next() {
+    public InputReader(InputStream in2) {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public String next() {
         try {
             while (tokenizer == null || !tokenizer.hasMoreTokens()) {
                 tokenizer = new StringTokenizer(in.readLine());
