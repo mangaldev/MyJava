@@ -1,13 +1,10 @@
 package client;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class KadanesAlgo {
 	static class Result{
 		int x1,y1,x2,y2;
-		int sum;
+		int sum = Integer.MIN_VALUE;
 	}
 
 	public static Result applyKadens(int[] arr){
@@ -56,19 +53,32 @@ public class KadanesAlgo {
 		return result;
 	}
 
+	/**
+	 * @param args
+	 */
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args){
-		//		int[] arr = {-1,-2,3,11,-6,-6,13};
-		//		Result r = applyKadens(arr);
-		int[][] arr = {{1, 2, -1, -4, -20},
+				int[] arr = {-1,-2,-3,-11,-6,-6,-13};
+				Result r = applyKadens(arr);
+		int[][] arr2 = {{1, 2, -1, -4, -20},
 				{-8, -3, 4, 2, 1},
 				{3, 8, 10, 1, 3},
 				{-4, -1, 1, 7, -6}
 		};
-		Result r = applyKadensIn2D(arr,5,4);
+		int[][] arr1 = {{0, -2},
+				{9 ,2},
+				{-4 ,1},
+				{-1 ,8},
+				{-10 ,1},
+				{-15 ,-1}};
+		//r = applyKadensIn2D(arr1,2,6);
 		System.out.println(r.sum);
-		System.out.println(r.x1+","+r.y1);
-		System.out.println(r.x2+","+r.y2);
-//		System.out.println(r.sum);
+		//System.out.println(r.x1+","+r.y1);
+		//System.out.println(r.x2+","+r.y2);
+		//		System.out.println(r.sum);
+		;
 	}
 
 }
