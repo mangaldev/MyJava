@@ -1,5 +1,7 @@
 package client;
 
+import java.util.Date;
+
 public class TestEqual {
     public TestEqual() {
         super();
@@ -19,6 +21,8 @@ public class TestEqual {
         System.out.println(" sdsfds true");
         else
         System.out.println(" sdfs false");
+      Date d = new Date();
+      System.out.println( d.toString());
     }
 }
 
