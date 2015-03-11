@@ -12,7 +12,7 @@ public class AAA {
 			result[i] = i;
 		for (int breakpoint = input - 1;breakpoint >= 1;breakpoint--)
 		{
-			int count = input-breakpoint 
+			int count = input-breakpoint ;
 		}
 	}
 
