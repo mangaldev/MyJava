@@ -3,6 +3,7 @@ import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.regex.Pattern;
 public class Main {
   public static void main(String... args){
 
@@ -16,11 +17,12 @@ public class Main {
 //	}
 //    System.out.println(date);
     
-    
+    boolean b =  Pattern.matches("aa*b","aab");
+    System.out.println(b);
     DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     Date newdate = null;
 	try {
-		newdate = df.parse(df.format(new Date(new Long(1413964798000))));
+		newdate = df.parse(df.format(new Date(new Long(0))));
 	} catch (ParseException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

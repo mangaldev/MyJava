@@ -7,7 +7,7 @@ public class SumGivenFindNodesFromRootToLeaf {
 		
 	}
 	
-	public void printPath(int[] tree,int root, int sum, int k){
+	public static void printPath(int[] tree,int root, int sum, int k){
 		if(tree[root] == -1){
 			return;
 		}

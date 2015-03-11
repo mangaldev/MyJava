@@ -30,9 +30,9 @@ public class HelloWorld {
 					lock.notify();
 					System.out.println(str);
 					try {
-						Thread.sleep(500);					
 						lock.wait();
 					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
