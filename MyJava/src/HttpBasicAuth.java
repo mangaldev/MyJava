@@ -16,7 +16,7 @@ import javax.net.ssl.SSLSession;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-import org.apache.commons.codec.binary.Base64;
+//import org.apache.commons.codec.binary.Base64;
 
 
 
@@ -59,22 +59,22 @@ public class HttpBasicAuth {
      * end of the fix
      */
 
-    URL url = new URL("https://cmls-sl0.ver.sda.t-online.de/vod/dtag_programs_delivery.xml.gz");
-    String credentials = "gracenote:cnsK9El3L8rk";
-    Base64 base = new Base64();
-    String encoding = base.encodeAsString(credentials.getBytes());
-    byte[] encodedBytes = Base64.encodeBase64(credentials.getBytes());
-    URLConnection connection = url.openConnection();
-    connection.setRequestProperty("Authorization", String.format("Basic %s", new String(encodedBytes)));
-    
-        
-    File file = new File("/relay/abc.zip");
-    InputStream in = (InputStream) connection.getInputStream();
-    OutputStream out = new BufferedOutputStream(new FileOutputStream(file));
-    for (int b; (b = in.read()) != -1;) {
-        out.write(b);
-    }
-    out.close();
-    in.close();
+//    URL url = new URL("https://cmls-sl0.ver.sda.t-online.de/vod/dtag_programs_delivery.xml.gz");
+//    String credentials = "gracenote:cnsK9El3L8rk";
+//    Base64 base = new Base64();
+//    String encoding = base.encodeAsString(credentials.getBytes());
+//    byte[] encodedBytes = Base64.encodeBase64(credentials.getBytes());
+//    URLConnection connection = url.openConnection();
+//    connection.setRequestProperty("Authorization", String.format("Basic %s", new String(encodedBytes)));
+//
+//
+//    File file = new File("/relay/abc.zip");
+//    InputStream in = (InputStream) connection.getInputStream();
+//    OutputStream out = new BufferedOutputStream(new FileOutputStream(file));
+//    for (int b; (b = in.read()) != -1;) {
+//        out.write(b);
+//    }
+//    out.close();
+//    in.close();
   }
 }
