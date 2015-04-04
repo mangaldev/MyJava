@@ -8,13 +8,15 @@ public class HelloWorld {
 	public static Object lock = new Object();
 
 	public static void main(String... args) {
-		ExecutorService executorService = Executors.newFixedThreadPool(2);
-		executorService.execute(new Print("Hello", 3));
-		executorService.execute(new Print("World", 4));
-		executorService.shutdown();
-	}
+//		ExecutorService executorService = Executors.newFixedThreadPool(2);
+//		executorService.execute(new Print("Hello", 3));
+//		executorService.execute(new Print("World", 4));
+//		executorService.shutdown();
+        String temp = "hello";
+        System.out.println(temp.substring(0,20));
+    }
 
-	static class Print implements Runnable {
+    static class  Print implements Runnable {
 		String str;
 		int count;
 
@@ -29,7 +31,12 @@ public class HelloWorld {
 				synchronized (lock) {
 					lock.notify();
 					System.out.println(str);
-					try {
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    try {
 						lock.wait();
 					} catch (InterruptedException e) {
 						// TODO Auto-generated catch block
