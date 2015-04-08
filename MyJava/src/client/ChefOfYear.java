@@ -23,6 +23,8 @@ class ChefOfyear {
         String strChef;
         String strCountryName;
         mapCountryChefNum = new HashMap<String, Integer>();
+
+
         InputReader ir = new InputReader(System.in);
         int numberOfChefs = ir.nextInt();
         mapChefCountryName = new HashMap<String, String>(numberOfChefs);
