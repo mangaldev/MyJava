@@ -1,6 +1,9 @@
 package tree;
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class TreeFromInPre {
     public TreeFromInPre() {
         super();
@@ -11,9 +14,32 @@ public class TreeFromInPre {
         String strInOrder = "DBEAFC";
         String strPreOrder = "ABDECF";
         //        Integer iCount = new Integer(0);
-        Node oTreeRoot =
+        Node oTreeRoot = //createTree(strInOrder,0,strInOrder.length(),strPreOrder);
             createTree(strInOrder, strPreOrder, 0, strPreOrder.length() - 1);
         printPreOrder(oTreeRoot);
+    }
+//DBE   A   FC
+//
+    public static Map<Character,Node> cache = new HashMap<>();
+
+
+    public static Node createTree(String strIn,int startIn, int endIn,String strPre){
+        if(strPre.length() == iCount)
+            return null;
+        Node newNode = null;
+        char rootChar = strPre.charAt(iCount);
+        iCount++;
+        if(cache.containsKey(rootChar))
+            newNode = cache.get(rootChar);
+        else {
+            newNode = new Node(rootChar);
+            cache.put(rootChar,newNode);
+        }
+
+        int index = strIn.indexOf(rootChar); // 3
+        newNode.left = createTree(strIn,startIn,index-1,strPre); //0,2
+        newNode.right = createTree(strIn,index + 1,endIn,strPre); // 4,5
+        return newNode;
     }
 
 
