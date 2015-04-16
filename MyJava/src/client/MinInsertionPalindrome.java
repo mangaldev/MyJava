@@ -15,6 +15,7 @@ import java.util.Scanner;
 
 public class MinInsertionPalindrome {
     static Scanner s;
+
     public MinInsertionPalindrome() {
         super();
     }
@@ -23,7 +24,7 @@ public class MinInsertionPalindrome {
         s = new Scanner(System.in);
         System.out.println("Enter INput");
         String strInput = "abcda";
-        System.out.println("INput taken as "+ strInput);
+        System.out.println("INput taken as " + strInput);
         int iResult = findMinNoOfInsertions(strInput);
         System.out.println(iResult);
     }
@@ -37,17 +38,13 @@ public class MinInsertionPalindrome {
             } else
                 return 1;
         }
-        if(strInput.charAt(0) == strInput.charAt(strInput.length() - 1)){
-        return findMinNoOfInsertions(strInput.substring(1, strInput.length() -1));
+        if (strInput.charAt(0) == strInput.charAt(strInput.length() - 1)) {
+            return findMinNoOfInsertions(strInput.substring(1, strInput.length() - 1));
+        } else {
+            return Math.min(findMinNoOfInsertions(strInput.substring(0, strInput.length() - 1)),
+                            findMinNoOfInsertions(strInput.substring(1, strInput.length()    ))
+                            ) + 1;
         }
-        else{
-            int result2  = 1 + findMinNoOfInsertions(strInput.substring(0, strInput.length() -1));
-            int result3 = 1+ findMinNoOfInsertions(strInput.substring(1, strInput.length()));
-            if(result2<result3)
-             return result2;
-            else 
-            return result3;
-        }
-      
+
     }
 }
