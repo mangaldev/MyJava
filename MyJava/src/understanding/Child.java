@@ -9,7 +9,12 @@ public class Child extends Parent {
 
     }
 
-    public static void abc(){
+    public static void abc() {
         System.out.println("Child.abc");
+    }
+
+    public void bcd() {
+        System.out.println("Child.bcd");
+        super.bcd();
     }
 }

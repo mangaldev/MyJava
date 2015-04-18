@@ -11,4 +11,7 @@ public class Parent {
     public static void abc(){
         System.out.println("Parent.abc");
     }
+    public  void bcd(){
+        System.out.println("Parent.bcd");
+    }
 }

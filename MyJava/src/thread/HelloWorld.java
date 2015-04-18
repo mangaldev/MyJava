@@ -8,9 +8,9 @@ public class HelloWorld {
 	public static Object lock = new Object();
 
 	public static void main(String... args) {
-//		ExecutorService executorService = Executors.newFixedThreadPool(2);
-//		executorService.execute(new Print("Hello", 3));
-//		executorService.execute(new Print("World", 4));
+		ExecutorService executorService = Executors.newFixedThreadPool(2);
+		executorService.execute(new Print("Hello", 3));
+		executorService.execute(new Print("World", 4));
 //		executorService.shutdown();
         String temp = "hello";
         System.out.println(temp.substring(0,20));
