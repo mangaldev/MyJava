@@ -1,5 +1,7 @@
 package arrayques;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 
 /**
@@ -7,11 +9,13 @@ import java.util.function.Consumer;
  */
 public class Confusing {
 
-    public void abc(double[] o){
-        System.out.println("Confusing.abc");
+
+
+    public void abc(List o){
+        System.out.println("Confusing.abcc");
     }
     public void abc(Object o){
-        System.out.println("Confusing.abcc");
+        System.out.println("Confusing.abc");
     }
 
     public static void abcd() {

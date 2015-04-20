@@ -1,5 +1,6 @@
 package dp;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class CoinChange {
@@ -8,7 +9,8 @@ public class CoinChange {
 //		int[] input = new int[]();
 //		findMinExchange();
 	}
-	public static int findMinExchange(int[] input, int value, int currentValue, int coinCount,Map<Integer, Integer> cache){
+    static Map<Integer, Integer> cache = new HashMap<>();
+	public static int findMinExchange(int[] input, int currentValue, int coinCount){
 		if(currentValue  == 0){
 			return coinCount;
 		}
@@ -16,7 +18,7 @@ public class CoinChange {
 			return cache.get(currentValue);
 		for(int i : input)
 		{
-			int minCount = findMinExchange(input,value,currentValue - i,coinCount+1,cache);
+			int minCount = findMinExchange(input,currentValue - i,coinCount+1);
 			if(cache.containsKey(currentValue - i))
 			{
 				int count = cache.get(currentValue - i);

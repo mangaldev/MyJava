@@ -11,8 +11,21 @@ public class EditDistance {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		editDistance("sunday","saturday");
-	}
+//		editDistance("sunday","saturday");
+        int count = editDist("saturday","sunday");
+        System.out.println("count = " + count);
+    }
+
+    private static int editDist(String str1, String str2){
+        if(str1.length() == 0)
+            return str2.length();
+        if(str2.length() == 0)
+            return str1.length();
+        if(str1.charAt(0) == str2.charAt(0))
+            return editDist(str1.substring(1),str2.substring(1));
+        else
+            return min(editDist(str1, str2.substring(1)), editDist(str1.substring(1), str2),editDist(str1.substring(1),str2.substring(1))) + 1;
+    }
 
 	private static void editDistance(String str1,String str2){
 		int len1 = str1.length();
