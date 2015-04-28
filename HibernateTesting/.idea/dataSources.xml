@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="937819772">
+    <data-source source="LOCAL" name="PostgreSQL - roundtable_development@localhost" uuid="3d37b004-57e1-4e20-9643-b5f8211eca73">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/roundtable_development</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

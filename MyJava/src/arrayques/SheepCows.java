@@ -4,8 +4,8 @@ package arrayques;
  * Created by mdev on 4/19/15.
  */
 public class SheepCows {
-    static int rows= 10;
-    static int cols= 10;
+    static public int rows= 10;
+    static public int cols= 10;
 
     public static void main(String[] args) {
 

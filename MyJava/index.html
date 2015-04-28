@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<ul>
+    <a href="#" class="a">1</a>
+    <a href="#" class="a">2</a>
+    <a href="#" class="a">3</a>
+    <a href="#" class="a">4</a>
+</ul>
+
+<script>
+
+    //    function sum(a) {
+    //        alert(a)
+    //        return function (b) { // takes a from outer LexicalEnvironment
+    //            return a + b
+    //        }
+    //    }
+    var sum = function (a) {
+        return function (b) {
+            return a + b
+        }
+    };
+    //    alert(sum(1)(2))
+
+    (function setHandlers() {
+
+        var lis = document.getElementsByClassName("a")
+        console.log(lis.length)
+
+        function closure(index) {
+            return function () {
+                console.log(index)
+            }
+        }
+        for (var i = 0; i < lis.length; i++) {
+            lis[i].addEventListener("click",closure(i));
+        }
+    })();
+</script>
+
+</body>
+</html>

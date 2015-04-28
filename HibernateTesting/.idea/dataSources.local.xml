@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="PostgreSQL - roundtable_development@localhost" uuid="3d37b004-57e1-4e20-9643-b5f8211eca73">
+      <secret-storage>master_key</secret-storage>
+      <user-name>postgres</user-name>
+      <schema-pattern>roundtable_development.pg_catalog roundtable_development.public</schema-pattern>
+      <default-schemas>roundtable_development.pg_catalog roundtable_development.public</default-schemas>
+    </data-source>
+  </component>
+</project>
