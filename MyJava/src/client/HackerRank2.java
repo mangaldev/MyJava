@@ -21,6 +21,7 @@ public class HackerRank2 {
         }
 
     }
+
     public static String SetToString(Set<Integer> set) {
         Iterator<Integer> it = set.iterator();
         if (!it.hasNext())

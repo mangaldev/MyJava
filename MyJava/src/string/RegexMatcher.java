@@ -54,7 +54,7 @@ public class RegexMatcher {
     }
 
     static {
-        boolean b = _match("a.*d$", "abcd");
+        boolean b = _match("a.*cd", "abcd");
         System.out.println("b = " + b);
 
     }

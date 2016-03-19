@@ -32,6 +32,8 @@ public class test1 {
         object.add(3);
         object.add("sdfsf");
         Number n = new Integer(2);
+        int i = -2;
+        System.out.println("i%10 = " + i % 10);
 //        List<Integer> nums = new ArrayList<Number>();
 
 
