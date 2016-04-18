@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3ac5ff2-9226-4e3c-be6a-d68b47d39102" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/ServiceLane.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/understanding/UsingThreeThreeSevenSenvenMake24.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/arrayques/GetMaximalSubArrayWithZeroSum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/arrayques/IntersectionOfSortedArrays.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/arrayques/test1$ThreadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/arrayques/test1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/client/HackerRank2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/gfg/TwoInstancesOfAllNumbers.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/greedy/AAA.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/hackerearth/JabongQuestion1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/recursive/PrintAllCombinations.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/string/RegexMatcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/thread/OneLoopTwoThreads.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/MyJava/tree/SumGivenFindNodesFromRootToLeaf.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="MyJava.iws" />
@@ -951,7 +937,7 @@
       <workItem from="1459397602013" duration="200000" />
       <workItem from="1460183180725" duration="5540000" />
       <workItem from="1460277099815" duration="1146000" />
-      <workItem from="1460954118818" duration="184000" />
+      <workItem from="1460954118818" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="adding some solutions">
       <created>1458366166472</created>
@@ -967,11 +953,18 @@
       <option name="project" value="LOCAL" />
       <updated>1458366217946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="adding some solutions">
+      <created>1460954314616</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1460954314616</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239900000" />
+    <option name="totallyTimeSpent" value="239930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -992,7 +985,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270073" sideWeight="0.5037594" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329927" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32605532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
