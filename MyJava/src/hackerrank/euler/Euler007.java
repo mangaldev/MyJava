@@ -23,6 +23,7 @@ public class Euler007 {
 
     }
 
+
     private static boolean isPrime(int num) {
         int index = 2;
         while (index < num) {
