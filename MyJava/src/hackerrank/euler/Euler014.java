@@ -47,5 +47,4 @@ public class Euler014 {
         }
         return result;
     }
-
 }
