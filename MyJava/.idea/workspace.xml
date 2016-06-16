@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3ac5ff2-9226-4e3c-be6a-d68b47d39102" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codechef/MaxProdSubSequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codechef/MaximumProduct.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/codechef/snackdownEntranceExam.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dp/PartitionProblem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler015.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler016.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler017.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler018.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler019.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler020.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java8/HelloJava8.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler021.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hackerrank/euler/Euler014.java" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler014.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hackerrank/euler/Euler020.java" afterPath="$PROJECT_DIR$/src/hackerrank/euler/Euler020.java" />
     </list>
     <ignored path="MyJava.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,16 +35,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Euler017.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hackerrank/euler/Euler017.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="snackdownEntranceExam.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/codechef/snackdownEntranceExam.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -111,12 +91,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Euler020.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Euler020.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hackerrank/euler/Euler020.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="277">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#810#811#0" expanded="true" />
+                <element signature="e#853#854#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Euler021.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hackerrank/euler/Euler021.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/arrayques/test1.java" />
         <option value="$PROJECT_DIR$/src/urban/BallBoxFit.java" />
         <option value="$PROJECT_DIR$/src/recursive/BSBPortal.java" />
         <option value="$PROJECT_DIR$/src/hackerrank/Pairs.java" />
@@ -234,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/hackerrank/euler/Euler018.java" />
         <option value="$PROJECT_DIR$/src/hackerrank/euler/Euler019.java" />
         <option value="$PROJECT_DIR$/src/hackerrank/euler/Euler020.java" />
+        <option value="$PROJECT_DIR$/src/hackerrank/euler/Euler021.java" />
       </list>
     </option>
   </component>
@@ -653,7 +649,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="extract.method.default.visibility" value="private" />
+    <property name="extract.method.default.visibility" value="packageLocal" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -667,47 +663,7 @@
       <recent name="reflection" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Euler019">
-    <configuration default="false" name="Euler017" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="hackerrank.euler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="hackerrank.euler.Euler017" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MyJava" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="snackdownEntranceExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="codechef.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="codechef.snackdownEntranceExam" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="MyJava" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Euler021">
     <configuration default="false" name="MaximumProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -756,6 +712,46 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="hackerrank.euler.Euler019" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MyJava" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Euler020" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="hackerrank.euler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="hackerrank.euler.Euler020" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="MyJava" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Euler021" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="hackerrank.euler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="hackerrank.euler.Euler021" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1265,19 +1261,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Euler017" />
-      <item index="1" class="java.lang.String" itemvalue="Application.snackdownEntranceExam" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MaximumProduct" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Euler018" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Euler019" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MaximumProduct" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Euler018" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Euler019" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Euler020" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Euler021" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Euler019" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Euler018" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MaximumProduct" />
-        <item index="3" class="java.lang.String" itemvalue="Application.snackdownEntranceExam" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Euler017" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Euler021" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Euler020" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Euler019" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Euler018" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MaximumProduct" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1320,7 +1316,7 @@
       <workItem from="1460954118818" duration="251000" />
       <workItem from="1460955051967" duration="34732000" />
       <workItem from="1461997864032" duration="35739000" />
-      <workItem from="1465545110474" duration="35654000" />
+      <workItem from="1465545110474" duration="41991000" />
     </task>
     <task id="LOCAL-00001" summary="adding some solutions">
       <created>1458366166472</created>
@@ -1364,11 +1360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1465545310915</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- Euler Solutions">
+      <created>1465960044917</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1465960044917</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346092000" />
+    <option name="totallyTimeSpent" value="352429000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1483,7 +1486,7 @@
           <option name="timeStamp" value="152" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="170" />
+      <option name="time" value="171" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1499,13 +1502,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1780,7 +1776,7 @@
         <state relative-caret-position="210">
           <caret line="14" column="86" selection-start-line="14" selection-start-column="86" selection-end-line="14" selection-end-column="86" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1790,7 +1786,7 @@
         <state relative-caret-position="200">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1923,9 +1919,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hackerrank/euler/Euler020.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="277">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#810#811#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hackerrank/euler/Euler021.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
