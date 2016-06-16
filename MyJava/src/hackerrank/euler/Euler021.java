@@ -1,7 +1,6 @@
 package hackerrank.euler;
 
 import java.util.*;
-import java.util.stream.IntStream;
 
 /**
  * Created by mdev on 6/14/16.
@@ -24,15 +23,7 @@ public class Euler021 {
     }
 
     static void cacheIt() {
-        Map<Integer, Integer> map = new HashMap<>();
-        for (int i = 1; i <= 100000; i++) {
-            map.put(i, 0);
-            for (int j = 1; j <= i / 2; j++) {
-                if (i % j == 0) {
-                    map.put(i, map.get(i) + j);
-                }
-            }
-        }
+        Map<Integer, Integer> map = getSumOfDivisorsMap();
         int result = 0;
         List<Integer> finalResult = new ArrayList<>();
 
@@ -46,5 +37,23 @@ public class Euler021 {
         }
         System.out.println(result);
         System.out.println(finalResult);
+    }
+
+    private static Map<Integer, Integer> getSumOfDivisorsMap() {
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(1,0);
+        for (int i = 2; i <= 100000; i++) {
+            map.put(i, 1);
+            int j = 2;
+            for (; j*j < i ; j++) {
+                if (i % j == 0) {
+                    map.put(i, map.get(i) + j + i/j);
+                }
+            }
+            if(j*j == i){
+                map.put(i, map.get(i) + j);
+            }
+        }
+        return map;
     }
 }

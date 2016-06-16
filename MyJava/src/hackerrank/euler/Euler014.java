@@ -1,5 +1,6 @@
 package hackerrank.euler;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -8,20 +9,21 @@ import java.util.Scanner;
  * Created by mdev on 5/11/16.
  */
 public class Euler014 {
-    private static Map<Long, Long> cache = new HashMap<>();
+    private static long[] cache = new long[5000001];
     private static long[] result = new long[5000001];
 
     public static void main(String[] args) {
-        cache.put(1L, 1L);
-        cache.put(2L, 2L);
+        Arrays.fill(cache,0);
+        cache[0] = 0;
+        cache[1] = 1;
+        cache[2] = 2;
         result[0] = 0;
         result[1] = 1;
-
+        result[2] = 2;
         Scanner sc = new Scanner(System.in);
-        int testCases = sc.nextInt();
         long max = Integer.MIN_VALUE;
         long maxSoFar = 1;
-        for (int i = 2; i <= 5000000; i++) {
+        for (int i = 2; i <=5000000 ; i++) {
             long chainLength = getChainLength(i);
             if (chainLength >= max) {
                 max = chainLength;
@@ -29,6 +31,7 @@ public class Euler014 {
             }
             result[i] = maxSoFar;
         }
+        int testCases = sc.nextInt();
         while (testCases-- != 0) {
             int input = sc.nextInt();
             System.out.println(result[input]);
@@ -36,15 +39,19 @@ public class Euler014 {
     }
 
     private static long getChainLength(long num) {
-        long result = 0;
-        if (cache.containsKey(num)) {
-            result = cache.get(num);
+        long result;
+        if (num<= 5000000 && cache[(int) num] != 0) {
+            result = cache[(int) num];
         } else {
-            if (num % 2 == 0) result = 1 + getChainLength(num / 2);
-            else result = 1 + getChainLength(num * 3 + 1);
-            if (num < 5000001)
-                cache.put(num, result);
+            if (num % 2 == 0) result = 1 + getChainLength(num >> 1);
+            else result = 1 + getChainLength((num<<2) - num + 1);
+            if(num<=5000000){
+                cache[(int) num] = result;
+            }
         }
+
         return result;
     }
+
+
 }
