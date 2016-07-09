@@ -16,44 +16,42 @@ public class Euler045 {
         int b = sc.nextInt();
         long indexA = 1;
         long indexB = 1;
-
+        long raceB = call(b, indexB);
+        long raceA = call(a, indexA);
         while (true) {
-            BigInteger raceA = call(a,indexA);
-            BigInteger raceB = call(b,indexB);
-            if(raceA.compareTo(big(N)) > 0 || raceB.compareTo(big(N)) > 0)
+            if (raceA > N || raceB > N)
                 break;
-            if(raceA.compareTo(raceB) > 0 )
+            if (raceA > raceB) {
                 indexB++;
-            else if(raceB.compareTo(raceA) > 0 )
+                raceB = call(b, indexB);
+            } else if (raceB > raceA) {
                 indexA++;
-            else{
+                raceA = call(a, indexA);
+            } else {
                 System.out.println(raceA);
                 indexA++;
                 indexB++;
+                raceA = call(a, indexA);
+                raceB = call(b, indexB);
             }
         }
-
     }
 
-    public static BigInteger call(int n, long N) {
+    public static long call(int n, long N) {
         if (n == 3) return triangle(N);
         else if (n == 5) return pentagonal(N);
         else return hexagonal(N);
     }
 
-    public static BigInteger triangle(long N) {
-        return (big(N).multiply(big(N).add(big(1)))).divide(big(2));
+    public static long triangle(long N) {
+        return (N * (N + 1)) / 2;
     }
 
-    public static BigInteger pentagonal(long N) {
-        return big(N).multiply(big(N).multiply(big(3)).subtract(big(1))).divide(big(2));
+    public static long pentagonal(long N) {
+        return N * (3 * N - 1) / 2;
     }
 
-    public static BigInteger hexagonal(long N) {
-        return big(N).multiply( big(N).multiply(big(2)).subtract(big(1)));
-    }
-
-    public static BigInteger big(long N){
-        return new BigInteger(N+"");
+    public static long hexagonal(long N) {
+        return N * (2 * N - 1);
     }
 }
