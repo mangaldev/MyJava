@@ -7,7 +7,7 @@ public class NumberToString {
 
 
     public static void main(String... args){
-        translate("","12258");
+        translate("","123410");
     }
 
 
@@ -20,8 +20,10 @@ public class NumberToString {
         }
         if(rem.length() >= 1) {
             int singleNum = Integer.parseInt(rem.substring(0, 1));
-            result1.append(Character.toChars(singleNum + 64));
-            translate(result1.toString(), rem.substring(1));
+            if(singleNum>0) {
+                result1.append(Character.toChars(singleNum + 64));
+                translate(result1.toString(), rem.substring(1));
+            }
         }
         if(rem.length() >= 2) {
             int doubleNum = Integer.parseInt(rem.substring(0, 2));

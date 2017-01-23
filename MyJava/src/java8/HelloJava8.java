@@ -9,6 +9,8 @@ import java.util.stream.Stream;
  */
 public class HelloJava8 {
     public static void main(String[] args) {
+        Integer a = null;
+        System.out.println(a);
         List<Integer> numbers = Arrays.asList(1,2,3,4,5,6);
         Stream<Integer> integerStream = numbers.stream().filter(num -> num % 2 == 0);
         numbers.stream().map(num -> giveZero()).count();
