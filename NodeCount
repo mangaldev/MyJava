@@ -1,0 +1,8 @@
+//def url = "http://apipack-qa-1688732547.us-west-2.elb.amazonaws.com/catapult/schedules?streamId=2&limit=1000&updateId=0"
+def url = "http://b2b.tmsapi.com/v2/Schedules?updateId=0&limit=1000&api_key=bx6u8cwqzkfzpwva83g6wepq&streamId=1&template=on_update"
+def text = new URL(url).getText()
+while (true){
+    def count = new XmlSlurper().parseText(text).schedules.schedule.size()
+    println "${new Date()} : Count : ${count} Result : ${count == 1000}"
+    sleep(5000)
+}
